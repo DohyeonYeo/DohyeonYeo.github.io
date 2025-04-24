@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dohyeon Yeo</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <div class="header-inner">
+                <div class="logo">Dohyeon Yeo</div>
+                <div class="hamburger" onclick="toggleMenu()">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="publications.html">Publications</a></li>
+                        <li><a href="experience.html">Experience</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Intro Section (Swapped layout) -->
+        <section class="intro" id="home">
+            <div class="intro-text">
+                <h1>Dohyeon Yeo</h1>
+                <p>
+                    I am a Human-Computer Interaction (HCI) researcher in the
+                    <a href="https://www.hcis-lab.com/home" target="_blank">HCIS Lab</a>.
+                    Currently, I am a Ph.D. candidate in the College of Information and Computing at
+                    Gwangju Institute of Science and Technology (GIST), advised by
+                    <a href="https://www.hcis-lab.com/people#h.p_nslrjYsLP6-C" target="_blank">Prof. SeungJun Kim</a>.
+                    I received my M.S. in Intelligent Robotics at GIST.
+                    Before joining GIST, I received my B.S. in Control and Automation Engineering at Korea Maritime and
+                    Ocean University.
+                    My research interests include in-vehicle UI/UX and extended reality (XR).
+                </p>
+            </div>
+            <div class="intro-img">
+                <img src="resources/_DohyeonYeo.jpg" alt="Dohyeon Yeo" />
+                <p>Email: ing.dohyeonyeo [at] gm.gist.ac.kr</p>
+                <p class="icon-links">
+                    <a href="https://scholar.google.co.kr/citations?user=NeWBvHIAAAAJ&hl=ko" target="_blank"
+                        title="Google Scholar">
+                        <i class="fas fa-graduation-cap icon"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/dohyeon-yeo-88639a217/" target="_blank" title="LinkedIn">
+                        <i class="fab fa-linkedin icon"></i>
+                    </a>
+                </p>
+            </div>
+        </section>
+
+        <!-- Publications Section -->
+        <section class="experience-section" style="margin-top: -65px;">
+            <h2>News</h2>
+
+            <div class="news-item">
+                <div class="news-year">2025</div>
+                <div class="news-text-date">
+                    <div class="news-text">One of my co-authored paper (I Want to Break Free) has been accepted and will be presented at CHI 2025!</div>
+                    <div class="news-date">Apr 30</div>
+                </div>
+            </div>
+
+            <div class="news-item">
+                <div class="news-year">2023</div>
+                <div class="news-text-date">
+                <div class="news-text">Visited MIT CSAIL (Computer Science and Artificial Intelligence Laboratory) as a
+                    part of the GIST-MIT Collaboration Project</div>
+                <div class="news-date">Oct 01</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            &copy; 2025 Dohyeon Yeo
+        </footer>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('nav ul');
+            menu.classList.toggle('show');
+        }
+    </script>
+</body>
+
+</html>
